@@ -168,7 +168,11 @@ export class ExerciseEngine {
     if (!concept) return undefined
 
     const target = focusWord(question, this.bank)
-    const siblings = this.siblingWords(concept, target)
+    // A word list from school has no pattern and no words like it: the card
+    // stays off, and only the written-in start remains.
+    const bare = concept.noSupportCard === true
+    const rule = bare ? '' : concept.patternReminder
+    const siblings = bare ? [] : this.siblingWords(concept, target)
     // The start is written in after a miss, and otherwise every other time
     // until he has typed one whole word on the pattern unaided.
     const state = this.runState.get(question.concept)
@@ -176,7 +180,7 @@ export class ExerciseEngine {
       question.type === 'audioDictation' &&
       (state?.lastWrong === true || (!state?.typedUnaided && !state?.lastStemmed))
     const stem = scaffold ? stemOf(question.word, this.bank) : undefined
-    return { rule: concept.patternReminder, siblings, ...(stem ? { stem } : {}) }
+    return { rule, siblings, ...(stem ? { stem } : {}) }
   }
 
   /**

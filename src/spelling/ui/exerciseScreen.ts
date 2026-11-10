@@ -228,11 +228,14 @@ export function mountExerciseScreen(
    */
   function renderSupport(support: Support | undefined): void {
     clear(supportCard)
-    supportCard.hidden = !support
-    if (!support) return
-    supportCard.append(
-      el('p', { class: 'support-rule' }, [el('span', { class: 'support-label' }, ['The pattern']), ' ', support.rule]),
-    )
+    const bare = !support || (support.rule === '' && support.siblings.length === 0)
+    supportCard.hidden = bare
+    if (!support || bare) return
+    if (support.rule) {
+      supportCard.append(
+        el('p', { class: 'support-rule' }, [el('span', { class: 'support-label' }, ['The pattern']), ' ', support.rule]),
+      )
+    }
     if (support.siblings.length > 0) {
       supportCard.append(
         el('p', { class: 'support-words' }, [

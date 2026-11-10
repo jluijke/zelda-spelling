@@ -249,6 +249,12 @@ export interface Concept {
    *   'firstPart' the opening syllable — prefixes
    */
   maskFrom?: 'bank' | 'lastPart' | 'firstPart'
+  /**
+   * No pattern card on its questions. A list of words from school has no
+   * pattern to remind him of and no words "like it", so the card would be
+   * noise; the start of a word is still written in when it would be elsewhere.
+   */
+  noSupportCard?: boolean
   /** Exercise that introduces it — the scheduler never reviews ahead of this. */
   introducedIn: number
   /**

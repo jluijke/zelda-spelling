@@ -41,6 +41,8 @@ export const CLASS_CONCEPTS: Concept[] = [1, 2, 3, 4, 5, 6].map((list) => ({
   id: `class-words-${list}`,
   label: `Class words, list ${list}`,
   patternReminder: REMINDERS[list] as string,
+  // The reminder above feeds the hint ladder; no card sits over the question.
+  noSupportCard: true,
   introducedIn: CLASS_EXERCISES[list] as number,
   reviewPool: pool(list),
 }))

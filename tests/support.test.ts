@@ -149,6 +149,21 @@ describe('support while a pattern is being learned', () => {
     expect(engine.support()?.rule).toBeTruthy()
   })
 
+  it('shows no card on a class list, but still writes in the start', () => {
+    const concept = CONCEPTS.get('class-words-1')
+    expect(concept?.noSupportCard).toBe(true)
+    const lesson: Exercise = {
+      ...LESSON,
+      concepts: ['class-words-1'],
+      activities: [aud('c-1', 'class-words-1', 'strengths'), aud('c-2', 'class-words-1', 'guitar')],
+    }
+    const engine = newEngine(lesson)
+    const support = engine.support()
+    expect(support?.rule).toBe('')
+    expect(support?.siblings).toEqual([])
+    expect(support?.stem).toBe('stre')
+  })
+
   it('never lists the word being asked, across every exercise', () => {
     for (const exercise of EXERCISES) {
       const engine = newEngine(exercise)
