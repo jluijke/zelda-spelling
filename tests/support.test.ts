@@ -66,7 +66,7 @@ describe('support while a pattern is being learned', () => {
   it('writes in the start of the word on the first audio question of a pattern', () => {
     const engine = newEngine()
     const stem = engine.support()?.stem
-    expect(stem).toBe('har')
+    expect(stem).toBe('ha')
     expect('harbour'.startsWith(stem as string)).toBe(true)
   })
 
@@ -161,7 +161,7 @@ describe('support while a pattern is being learned', () => {
     const support = engine.support()
     expect(support?.rule).toBe('')
     expect(support?.siblings).toEqual([])
-    expect(support?.stem).toBe('stre')
+    expect(support?.stem).toBe('st')
   })
 
   it('never lists the word being asked, across every exercise', () => {
@@ -189,12 +189,13 @@ describe('support while a pattern is being learned', () => {
 })
 
 describe('stemOf', () => {
-  it('gives the first beat of a word with more than one', () => {
-    expect(stemOf('harbour', WORD_BANK)).toBe('har')
-    expect(stemOf('neighbour', WORD_BANK)).toBe('neigh')
+  it('gives the first two letters of a word of five or more', () => {
+    expect(stemOf('harbour', WORD_BANK)).toBe('ha')
+    expect(stemOf('neighbour', WORD_BANK)).toBe('ne')
+    expect(stemOf('young', WORD_BANK)).toBe('yo')
   })
 
-  it('gives the letters before the tricky part of a one-beat word', () => {
+  it('gives one letter of a short word', () => {
     expect(stemOf('boat', WORD_BANK)).toBe('b')
   })
 

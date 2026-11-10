@@ -22,7 +22,7 @@ import type {
 import { grade } from './grading'
 import { buildHint, maxHintLevel, type Hint } from './hints'
 import { isMastered } from './mastery'
-import { patternSpanOf, syllablesOf } from './wordbank'
+import { patternSpanOf } from './wordbank'
 import { focusWord } from './hints'
 import { recordAttempt, type MasteryStore } from './mastery'
 import { buildQueue } from './scheduler'
@@ -461,14 +461,10 @@ export function wordsOf(q: Question): string[] {
 
 /**
  * The opening of a word that is written in for him when a pattern is new:
- * its first beat when it has more than one ("mit" of mitten), otherwise the
- * letters before the tricky part. Always shows at least one letter and
- * always leaves at least two to spell, so there is still a word to finish.
+ * its first two letters ("mi" of mitten), or just the first for a word of
+ * three or four, so there is always a word left to finish.
  */
-export function stemOf(word: string, bank: WordBank): string {
+export function stemOf(word: string, _bank: WordBank): string {
   if (word.length < 3) return ''
-  const syllables = syllablesOf(word, bank)
-  let length = syllables.length > 1 ? (syllables[0] as string).length : patternSpanOf(word, bank)[0]
-  length = Math.max(1, Math.min(length, word.length - 2))
-  return word.slice(0, length)
+  return word.slice(0, word.length >= 5 ? 2 : 1)
 }
