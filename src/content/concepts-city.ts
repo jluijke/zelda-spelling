@@ -70,7 +70,6 @@ export const CITY_CONCEPTS: Concept[] = [
       aud('cs-r7', 'compound-some-every', 'nothing'),
       aud('cs-r8', 'compound-some-every', 'somewhere'),
       aud('cs-r9', 'compound-some-every', 'everybody', { difficulty: 2 }),
-      mistake('cs-r10', 'compound-some-every', 'I looked every where for my shoe.', 'every where', 'everywhere', { difficulty: 2 }),
     ],
   },
   {

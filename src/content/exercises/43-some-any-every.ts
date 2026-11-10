@@ -1,5 +1,5 @@
 import type { Exercise } from '../../spelling/types'
-import { aud, build, mistake, novel, sort } from '../build'
+import { aud, build, novel, sort } from '../build'
 
 /** Exercise 43 — the compound words he writes every single day. */
 export const exercise43: Exercise = {
@@ -31,7 +31,6 @@ export const exercise43: Exercise = {
 
     aud('e43-6', 'compound-some-every', 'sometimes'),
     aud('e43-7', 'compound-some-every', 'everything'),
-    mistake('e43-8', 'compound-some-every', 'I looked every where for my hat.', 'every where', 'everywhere'),
 
     novel(aud('e43-9', 'compound-some-every', 'anywhere', { difficulty: 2 })),
     novel(aud('e43-10', 'compound-some-every', 'somebody', { difficulty: 2 })),

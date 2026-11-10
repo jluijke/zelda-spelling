@@ -209,11 +209,20 @@ function checkQuestion(question: Question, where: string): void {
     if (question.wrong === question.right) {
       fail(`${where}: "${question.id}" says "${question.wrong}" is wrong, but its correction is the same word`)
     }
+    // The child is asked to click one word, so a mistake spread over two
+    // ("every where") can never be clicked, and the hints then talk about a
+    // word that is not on the screen.
+    if (/\s/.test(question.wrong.trim())) {
+      fail(`${where}: "${question.id}" marks "${question.wrong}" as the mistake, but that is more than one word and only one can be clicked`)
+    }
   }
   if (question.type === 'proofread') {
     for (const error of question.errors) {
       if (!question.text.includes(error.wrong)) {
         fail(`${where}: "${question.id}" lists "${error.wrong}" as a mistake, but it is not in the paragraph`)
+      }
+      if (/\s/.test(error.wrong.trim())) {
+        fail(`${where}: "${question.id}" lists "${error.wrong}" as a mistake, but that is more than one word and only one can be clicked`)
       }
       // A "mistake" whose correction is the same word is unanswerable: the
       // child is asked to fix something that is already right.
