@@ -34,8 +34,9 @@ export const exercise41: Exercise = {
     ),
 
     cloze('e41-7', 'contractions-more', '___ going to be sunny tomorrow.', "It's", {
+      choices: ["It's", 'Its', "Its'"],
       speakSentence: true,
-      prompt: 'Write "it is" as one squashed word.',
+      prompt: 'Which one is "it is" squashed into one word?',
     }),
     aud('e41-8', 'contractions-more', "she'll"),
     mistake('e41-9', 'contractions-more', "Theyve got a new puppy.", 'Theyve', "They've"),

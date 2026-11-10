@@ -316,28 +316,34 @@ export const CITY_CONCEPTS: Concept[] = [
     introducedIn: 56,
     reviewPool: [
       cloze('hs-r1', 'homophones-simple', 'We had ___ and vegetables for dinner.', 'meat', {
+        choices: ['meat', 'meet', 'mete'],
         speakSentence: true,
-        prompt: 'Write the word that means "food from an animal". It has "eat" in it.',
+        prompt: 'Choose the word that means "food from an animal". It has "eat" in it.',
       }),
       cloze('hs-r2', 'homophones-simple', 'I will ___ you at the gate.', 'meet', {
+        choices: ['meet', 'meat', 'mete'],
         speakSentence: true,
-        prompt: 'Write the word that means "come together with".',
+        prompt: 'Choose the word that means "come together with".',
       }),
       cloze('hs-r3', 'homophones-simple', 'The ___ was shining all day.', 'sun', {
+        choices: ['sun', 'son', 'sunn'],
         speakSentence: true,
-        prompt: 'Write the word that means "the star in the sky".',
+        prompt: 'Choose the word that means "the star in the sky".',
       }),
       cloze('hs-r4', 'homophones-simple', 'A ___ buzzed around the flowers.', 'bee', {
+        choices: ['bee', 'be', 'bea'],
         speakSentence: true,
-        prompt: 'Write the word that means "the insect that makes honey".',
+        prompt: 'Choose the word that means "the insect that makes honey".',
       }),
       cloze('hs-r5', 'homophones-simple', 'The dog wagged its ___.', 'tail', {
+        choices: ['tail', 'tale', 'tael'],
         speakSentence: true,
-        prompt: 'Write the word that means "the part at the back of an animal".',
+        prompt: 'Choose the word that means "the part at the back of an animal".',
       }),
       cloze('hs-r6', 'homophones-simple', 'I ate a juicy ___.', 'pear', {
+        choices: ['pear', 'pair', 'pare'],
         speakSentence: true,
-        prompt: 'Write the word that means "a fruit". It has "ear" in it.',
+        prompt: 'Choose the word that means "a fruit". It has "ear" in it.',
       }),
       mistake('hs-r7', 'homophones-simple', 'The postman brought the male.', 'male', 'mail'),
       mistake('hs-r8', 'homophones-simple', 'We could see the stars last knight.', 'knight', 'night'),
@@ -352,24 +358,29 @@ export const CITY_CONCEPTS: Concept[] = [
     introducedIn: 57,
     reviewPool: [
       cloze('pa-r1', 'possessive-apostrophe', 'The ___ bone was in the garden.', "dog's", {
+        choices: ["dog's", 'dogs', "dogs'"],
         speakSentence: true,
-        prompt: 'The bone belongs to the dog. Write "dog" so that it shows it.',
+        prompt: 'The bone belongs to the dog. Choose the way of writing "dog" that shows it.',
       }),
       cloze('pa-r2', 'possessive-apostrophe', "___ car is red.", "Mum's", {
+        choices: ["Mum's", 'Mums', "Mums'"],
         speakSentence: true,
-        prompt: 'The car belongs to Mum. Write "Mum" so that it shows it.',
+        prompt: 'The car belongs to Mum. Choose the way of writing "Mum" that shows it.',
       }),
       cloze('pa-r3', 'possessive-apostrophe', 'The ___ hat blew away.', "girl's", {
+        choices: ["girl's", 'girls', "girls'"],
         speakSentence: true,
-        prompt: 'The hat belongs to the girl. Write "girl" so that it shows it.',
+        prompt: 'The hat belongs to the girl. Choose the way of writing "girl" that shows it.',
       }),
       cloze('pa-r4', 'possessive-apostrophe', 'The ___ tail was long.', "cat's", {
+        choices: ["cat's", 'cats', "cats'"],
         speakSentence: true,
-        prompt: 'The tail belongs to the cat. Write "cat" so that it shows it.',
+        prompt: 'The tail belongs to the cat. Choose the way of writing "cat" that shows it.',
       }),
       cloze('pa-r5', 'possessive-apostrophe', 'My ___ bike has a bell.', "brother's", {
+        choices: ["brother's", 'brothers', "brothers'"],
         speakSentence: true,
-        prompt: 'The bike belongs to my brother. Write "brother" so that it shows it.',
+        prompt: 'The bike belongs to my brother. Choose the way of writing "brother" that shows it.',
         difficulty: 2,
       }),
       mistake('pa-r6', 'possessive-apostrophe', 'The dogs bone was buried.', 'dogs', "dog's"),

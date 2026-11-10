@@ -67,8 +67,24 @@ describe('what replaced them is answerable', () => {
   )
 
   it('converted the ones that were coins', () => {
-    expect(typedCloze.length).toBeGreaterThan(70)
+    expect(typedCloze.length).toBeGreaterThanOrEqual(60)
     expect(typedPattern.length).toBeGreaterThan(20)
+  })
+
+  it('only asks for a typed gap when it names the word to work from, in the grammar rules', () => {
+    // "The ___ hat blew away" with "write the word that means a young woman"
+    // is a riddle, not a spelling question: he had to conjure the word before
+    // he could spell it, and gave up. A spelling gap now always offers three
+    // spellings to choose between. The grammar sack's gaps stay typed because
+    // each names its base word ("the plural of box") and asks for its form.
+    const spelling = [
+      ...EXERCISES.flatMap((e) => e.activities),
+      ...[...CONCEPTS.values()].flatMap((c) => c.reviewPool),
+    ]
+    for (const q of spelling) {
+      if (q.type === 'cloze') expect(q.choices?.length, q.id).toBe(3)
+    }
+    for (const q of typedCloze) expect(q.id, q.id).toMatch(/^gr-/)
   })
 
   it('says the word aloud for every typed pattern question', () => {

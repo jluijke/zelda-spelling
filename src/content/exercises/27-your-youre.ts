@@ -24,16 +24,19 @@ export const exercise27: Exercise = {
     // a question about the apostrophe rather than a coin with "your" on one
     // side and "you're" on the other.
     cloze('e27-3', 'apostrophe-pairs', 'Is this ___ jumper?', 'your', {
+      choices: ['your', "you're", 'yore'],
       speakSentence: true,
-      prompt: 'Fill the gap using the word "you".',
+      prompt: 'Choose the right form of "you".',
     }),
     cloze('e27-4', 'apostrophe-pairs', '___ going to enjoy this.', "You're", {
+      choices: ["You're", 'Your', 'Youre'],
       speakSentence: true,
-      prompt: 'Fill the gap using the word "you".',
+      prompt: 'Choose the right form of "you".',
     }),
     cloze('e27-5', 'apostrophe-pairs', 'The dog wagged ___ tail.', 'its', {
+      choices: ['its', "it's", "its'"],
       speakSentence: true,
-      prompt: 'Fill the gap using the word "it".',
+      prompt: 'Choose the right form of "it".',
     }),
 
     mistake('e27-9', 'apostrophe-pairs', 'Your going to be late.', 'Your', "You're"),

@@ -178,8 +178,12 @@ function checkQuestion(question: Question, where: string): void {
   // provided, minus the coin.
   if (question.type === 'cloze') {
     const offered = question.choices?.length ?? 0
-    if (offered === 0 && (question.prompt?.trim().length ?? 0) === 0) {
-      fail(`${where}: cloze "${question.id}" has neither choices nor a prompt saying what to write, so it is a guess rather than a spelling question`)
+    // A gap he has to fill from a clue ("the word that means a story") is a
+    // riddle before it is a spelling question, and he gave up on them. A
+    // spelling gap always offers the spellings to choose between; only the
+    // grammar sack, which names the word to change, keeps typed gaps.
+    if (offered === 0) {
+      fail(`${where}: cloze "${question.id}" has no choices, so he has to guess the word before he can spell it — offer three spellings`)
     }
     if (offered === 1) {
       fail(`${where}: cloze "${question.id}" offers a single choice, which answers itself`)

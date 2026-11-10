@@ -16,24 +16,29 @@ export const exercise56: Exercise = {
   reviewConcepts: ['homophones-more', 'al-words', 'igh-sound'],
   activities: [
     cloze('e56-1', 'homophones-simple', 'We had ___ pies for lunch.', 'meat', {
+      choices: ['meat', 'meet', 'mete'],
       speakSentence: true,
-      prompt: 'Write the word that means "food from an animal". It has "eat" in it.',
+      prompt: 'Choose the word that means "food from an animal". It has "eat" in it.',
     }),
     cloze('e56-2', 'homophones-simple', 'Come and ___ my new puppy.', 'meet', {
+      choices: ['meet', 'meat', 'mete'],
       speakSentence: true,
-      prompt: 'Write the word that means "say hello to for the first time".',
+      prompt: 'Choose the word that means "say hello to for the first time".',
     }),
     cloze('e56-3', 'homophones-simple', 'The postman brought the ___.', 'mail', {
+      choices: ['mail', 'male', 'maile'],
       speakSentence: true,
-      prompt: 'Write the word that means "letters and parcels".',
+      prompt: 'Choose the word that means "letters and parcels".',
     }),
     cloze('e56-4', 'homophones-simple', 'The ___ rode a white horse.', 'knight', {
+      choices: ['knight', 'night', 'nite'],
       speakSentence: true,
-      prompt: 'Write the word that means "a soldier in armour". It starts with a silent letter.',
+      prompt: 'Choose the word that means "a soldier in armour". It starts with a silent letter.',
     }),
     cloze('e56-5', 'homophones-simple', 'Grandpa told us a ___ about a dragon.', 'tale', {
+      choices: ['tale', 'tail', 'tael'],
       speakSentence: true,
-      prompt: 'Write the word that means "a story".',
+      prompt: 'Choose the word that means "a story".',
     }),
 
     mistake('e56-6', 'homophones-simple', 'The dog wagged its tale.', 'tale', 'tail'),

@@ -24,8 +24,9 @@ export const exercise42: Exercise = {
     aud('e42-6', 'contractions-not', "wasn't"),
     aud('e42-7', 'contractions-not', "hasn't"),
     cloze('e42-8', 'contractions-not', 'We ___ go outside until the rain stops.', "can't", {
+      choices: ["can't", 'cant', "ca'nt"],
       speakSentence: true,
-      prompt: 'Write "can not" as one squashed word.',
+      prompt: 'Which one is "can not" squashed into one word?',
     }),
     mistake('e42-9', 'contractions-not', "The shop is'nt open yet.", "is'nt", "isn't"),
 

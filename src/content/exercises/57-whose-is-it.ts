@@ -15,20 +15,24 @@ export const exercise57: Exercise = {
   reviewConcepts: ['contractions-more', 'plural-s-es', 'homophones-simple'],
   activities: [
     cloze('e57-1', 'possessive-apostrophe', 'The ___ bone was in the garden.', "dog's", {
+      choices: ["dog's", 'dogs', "dogs'"],
       speakSentence: true,
-      prompt: 'The bone belongs to the dog. Write "dog" so that it shows it.',
+      prompt: 'The bone belongs to the dog. Choose the way of writing "dog" that shows it.',
     }),
     cloze('e57-2', 'possessive-apostrophe', 'The ___ tail was fluffy.', "cat's", {
+      choices: ["cat's", 'cats', "cats'"],
       speakSentence: true,
-      prompt: 'The tail belongs to the cat. Write "cat" so that it shows it.',
+      prompt: 'The tail belongs to the cat. Choose the way of writing "cat" that shows it.',
     }),
     cloze('e57-3', 'possessive-apostrophe', '___ car is red.', "Mum's", {
+      choices: ["Mum's", 'Mums', "Mums'"],
       speakSentence: true,
-      prompt: 'The car belongs to Mum. Write "Mum" so that it shows it.',
+      prompt: 'The car belongs to Mum. Choose the way of writing "Mum" that shows it.',
     }),
     cloze('e57-4', 'possessive-apostrophe', 'The ___ desk was tidy.', "teacher's", {
+      choices: ["teacher's", 'teachers', "teachers'"],
       speakSentence: true,
-      prompt: 'The desk belongs to the teacher. Write "teacher" so that it shows it.',
+      prompt: 'The desk belongs to the teacher. Choose the way of writing "teacher" that shows it.',
     }),
 
     sort(
@@ -45,8 +49,9 @@ export const exercise57: Exercise = {
     mistake('e57-7', 'possessive-apostrophe', 'That is Toms book.', 'Toms', "Tom's"),
 
     novel(cloze('e57-8', 'possessive-apostrophe', 'My ___ bike has a bell.', "brother's", {
+      choices: ["brother's", 'brothers', "brothers'"],
       speakSentence: true,
-      prompt: 'The bike belongs to my brother. Write "brother" so that it shows it.',
+      prompt: 'The bike belongs to my brother. Choose the way of writing "brother" that shows it.',
       difficulty: 2,
     })),
   ],
