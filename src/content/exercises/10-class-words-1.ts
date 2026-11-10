@@ -8,7 +8,7 @@ import { aud, novel } from '../build'
  */
 export const exercise10: Exercise = {
   id: 10,
-  title: 'Class Words: Guitar and Galaxy',
+  title: 'Class List 1',
   level: 2,
   levelName: 'Pattern Hunters',
   targetMinutes: 6,
@@ -24,7 +24,7 @@ export const exercise10: Exercise = {
     novel(aud('e10-7', 'class-words-1', 'galaxy', { withSentence: true, difficulty: 2 })),
   ],
   ruleReveal: {
-    title: 'Class Words: Guitar and Galaxy',
+    title: 'Class List 1',
     text: 'These are words from your class list, back for another go. Say each one in beats, write every beat, and look twice at the part that caught you last time: the n-g-t-h in strengths, the dropped e in usable, the silent u in guitar.',
     examples: ['strengths', 'usable', 'guitar', 'galaxy'],
   },

@@ -8,7 +8,7 @@ import { aud, novel } from '../build'
  */
 export const exercise53: Exercise = {
   id: 53,
-  title: 'Class Words: Orchestra',
+  title: 'Class List 6',
   level: 6,
   levelName: 'City Spellers',
   targetMinutes: 6,
@@ -25,7 +25,7 @@ export const exercise53: Exercise = {
     novel(aud('e53-8', 'class-words-6', 'orchestra', { withSentence: true, difficulty: 2 })),
   ],
   ruleReveal: {
-    title: 'Class Words: Orchestra',
+    title: 'Class List 6',
     text: 'The last class list. Asteroid has an e in the middle, orchestra starts with or and its ch says k, motivator ends in or, and mountainous is mountain with ous on the end.',
     examples: ['asteroid', 'orchestra', 'motivator', 'mountainous'],
   },

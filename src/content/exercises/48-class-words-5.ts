@@ -8,7 +8,7 @@ import { aud, novel } from '../build'
  */
 export const exercise48: Exercise = {
   id: 48,
-  title: 'Class Words: Climate',
+  title: 'Class List 5',
   level: 6,
   levelName: 'City Spellers',
   targetMinutes: 6,
@@ -24,7 +24,7 @@ export const exercise48: Exercise = {
     novel(aud('e48-7', 'class-words-5', 'colours', { withSentence: true, difficulty: 2 })),
   ],
   ruleReveal: {
-    title: 'Class Words: Climate',
+    title: 'Class List 5',
     text: 'The fifth class list. Climate ends in a silent e, launch has au in the middle, strength packs n-g-t-h together, and colours keeps its u the Australian way.',
     examples: ['climate', 'launch', 'strength', 'colours'],
   },

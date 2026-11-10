@@ -8,7 +8,7 @@ import { aud, novel } from '../build'
  */
 export const exercise38: Exercise = {
   id: 38,
-  title: 'Class Words: Australia',
+  title: 'Class List 4',
   level: 5,
   levelName: 'Spelling Detectives',
   targetMinutes: 6,
@@ -25,7 +25,7 @@ export const exercise38: Exercise = {
     novel(aud('e38-8', 'class-words-4', 'assignment', { withSentence: true, difficulty: 2 })),
   ],
   ruleReveal: {
-    title: 'Class Words: Australia',
+    title: 'Class List 4',
     text: 'The fourth class list. Watch the quiet letters: always has one l, assignment has a g you never hear, and temperature has four beats, tem-per-a-ture, even if you say it in three.',
     examples: ['always', 'Australia', 'temperature', 'assignment'],
   },

@@ -8,7 +8,7 @@ import { aud, novel } from '../build'
  */
 export const exercise29: Exercise = {
   id: 29,
-  title: 'Class Words: Bicycle',
+  title: 'Class List 3',
   level: 4,
   levelName: 'Meaning Masters',
   targetMinutes: 6,
@@ -25,7 +25,7 @@ export const exercise29: Exercise = {
     novel(aud('e29-8', 'class-words-3', 'traditions', { withSentence: true, difficulty: 2 })),
   ],
   ruleReveal: {
-    title: 'Class Words: Bicycle',
+    title: 'Class List 3',
     text: 'The third class list. Most of these are a word you know with an ending on it: head-ing, explode-d, fair-ness, use-ful, tradition-s. Spell the base word first, then the ending.',
     examples: ['heading', 'ladies', 'fairness', 'traditions'],
   },

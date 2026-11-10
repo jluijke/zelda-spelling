@@ -8,7 +8,7 @@ import { aud, novel } from '../build'
  */
 export const exercise19: Exercise = {
   id: 19,
-  title: 'Class Words: Scientist',
+  title: 'Class List 2',
   level: 3,
   levelName: 'Word Engineers',
   targetMinutes: 6,
@@ -24,7 +24,7 @@ export const exercise19: Exercise = {
     novel(aud('e19-7', 'class-words-2', 'biology', { withSentence: true, difficulty: 2 })),
   ],
   ruleReveal: {
-    title: 'Class Words: Scientist',
+    title: 'Class List 2',
     text: 'The second class list. Long words are just beats in a row: def-i-nite-ly has "finite" hiding in it, coun-sel-lor doubles its l, and sci-en-tist and spe-cial-ist both end in ist.',
     examples: ['definitely', 'counsellor', 'scientist', 'biology'],
   },
