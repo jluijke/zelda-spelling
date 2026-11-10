@@ -324,7 +324,64 @@ const level6Words: Spec[] = [
   'play-ground', 'shoe', 'shin-y', 'flew', 'in-to', 'rain-ing', 'an-y-way',
 ]
 
+// --- The class lists: words he misspelled at school last term ---------------
+// Every one has its sentence, because each is said and then heard in use.
+const classWords: Spec[] = [
+  // list 1
+  ['stre[ngth]s', { sentence: 'His main strengths are listening and hard work.' }],
+  ['us-[a]-ble', { sentence: 'This old torch is still usable.' }],
+  ['hap-pi-[ness]', { sentence: 'Her face lit up with happiness.' }],
+  ['watch-[ed]', { sentence: 'We watched the storm roll in over the hills.' }],
+  ['us[ed]', { sentence: 'I used a ruler to draw the line.' }],
+  ['g[ui]-tar', { sentence: 'My cousin plays the guitar in a band.' }],
+  ['gal-[a]x-y', { sentence: 'Our galaxy is called the Milky Way.' }],
+  // list 2
+  ['y[ou]ng', { sentence: 'The young joey stayed close to its mother.' }],
+  ['def-[i]-nite-ly', { sentence: 'We will definitely be there on time.' }],
+  ['coun-[sel]-lor', { sentence: 'The school counsellor helped him feel better.' }],
+  ['com-pl[i]-ment-ed', { sentence: 'The teacher complimented her neat handwriting.' }],
+  ['[sci]-en-tist', { sentence: 'A scientist tests ideas with experiments.' }],
+  ['spe-[cial]-ist', { sentence: 'The specialist looked at the X-ray of his arm.' }],
+  ['bi-[o]l-o-gy', { sentence: 'In biology we learned how plants make food.' }],
+  // list 3
+  ['h[ea]d-ing', { sentence: 'Write a heading at the top of the page.' }],
+  ['bi-cy-cle', { sentence: 'She rode her bicycle to the shops.' }],
+  ['ex-plod-[ed]', { sentence: 'The balloon exploded with a loud bang.' }],
+  ['la-dies', { sentence: 'Two ladies waved from the bus.' }],
+  ['w[or]ld', { sentence: 'There are seven continents in the world.' }],
+  ['fair-[ness]', { sentence: 'The umpire was known for her fairness.' }],
+  ['use-ful', { sentence: 'A torch is useful in a blackout.' }],
+  ['tra-di-[tions]', { sentence: 'Our family has traditions for Christmas morning.' }],
+  // list 4
+  ['al-ways', { sentence: 'We always wash our hands before dinner.' }],
+  ['th[i]nk', { sentence: 'Think carefully before you answer.' }],
+  ['tea-cher', { sentence: 'Our teacher reads to us after lunch.' }],
+  ['com-pl[e]te', { sentence: 'Please complete the puzzle before the bell.' }],
+  ['be-hav[ed]', { sentence: 'The puppy behaved well at the vet.' }],
+  ['[Au]s-tra-lia', { sentence: 'Australia is the driest inhabited continent.' }],
+  ['tem-p[er]-a-ture', { sentence: 'The temperature dropped to five degrees overnight.' }],
+  ['as-[sig]n-ment', { sentence: 'My science assignment is due on Friday.' }],
+  // list 5
+  ['bub-bl[y]', { sentence: 'The lemonade was cold and bubbly.' }],
+  ['cli-m[a]te', { sentence: 'Darwin has a hot and wet climate.' }],
+  ['l[au]nch', { sentence: 'We watched the rocket launch on the news.' }],
+  ['stre[ngth]', { sentence: 'It took all his strength to lift the box.' }],
+  ['in-dig-[e]-nous', { sentence: 'Indigenous Australians have lived here for tens of thousands of years.' }],
+  ['mu-s[i]c', { sentence: 'We play music in the car on long trips.' }],
+  ['col-[our]s', { sentence: 'The parrot\'s colours were bright and bold.' }],
+  // list 6
+  ['poi-son', { sentence: 'Some mushrooms contain poison.' }],
+  ['l[igh]t-bulb', { sentence: 'Dad changed the lightbulb in the hall.' }],
+  ['mo-ti-va-t[or]', { sentence: 'Our coach is a great motivator.' }],
+  ['moun-tain-ous', { sentence: 'New Zealand is a mountainous country.' }],
+  ['plan-[e]t', { sentence: 'Mars is the fourth planet from the sun.' }],
+  ['as-t[er]-oid', { sentence: 'An asteroid is a rock that orbits the sun.' }],
+  ['ul-ti-m[a]te', { sentence: 'Winning the final was the ultimate prize.' }],
+  ['or-[ch]es-tra', { sentence: 'The orchestra tuned up before the concert.' }],
+]
+
 export const WORD_BANK = buildWordBank([
+  ...classWords,
   ...syllableWords,
   ...eeWords,
   ...oaWords,

@@ -10,7 +10,7 @@ export const exercise45: Exercise = {
   title: 'Say It, Write It',
   level: 6,
   levelName: 'City Spellers',
-  targetMinutes: 6,
+  targetMinutes: 7,
   concepts: ['dictation-short'],
   reviewConcepts: ['compound-weather', 'contractions-more', 'ee-sound'],
   activities: [

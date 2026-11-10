@@ -17,7 +17,7 @@ export const exercise40: Exercise = {
   concepts: ['mixed-mastery'],
   reviewConcepts: [
     'spellcheck-limits',
-    'sentence-dictation',
+    'sentence-dictation', 'class-words-3',
     'australian-spelling',
     'tion-ending',
     'word-families',

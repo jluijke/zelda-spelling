@@ -12,6 +12,7 @@
 import type { Concept, ConceptId } from '../spelling/types'
 import { aud, build, dictate, family, letters, mistake, pat, proof, sort, syl } from './build'
 import { CITY_CONCEPTS } from './concepts-city'
+import { CLASS_CONCEPTS } from './concepts-class'
 
 const CONCEPT_LIST: Concept[] = [
   {
@@ -872,7 +873,7 @@ const CONCEPT_LIST: Concept[] = [
 ]
 
 export const CONCEPTS: ReadonlyMap<ConceptId, Concept> = new Map(
-  [...CONCEPT_LIST, ...CITY_CONCEPTS].map((concept) => [concept.id, concept]),
+  [...CONCEPT_LIST, ...CITY_CONCEPTS, ...CLASS_CONCEPTS].map((concept) => [concept.id, concept]),
 )
 
 export function conceptLabel(id: ConceptId): string {

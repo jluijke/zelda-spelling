@@ -12,7 +12,7 @@ export const exercise60: Exercise = {
   levelName: 'City Spellers',
   targetMinutes: 6,
   concepts: ['city-mastery'],
-  reviewConcepts: ['dictation-story', 'homophones-simple', 'possessive-apostrophe'],
+  reviewConcepts: ['dictation-story', 'homophones-simple', 'possessive-apostrophe', 'class-words-6'],
   activities: [
     aud('e60-1', 'city-mastery', 'thunderstorm', {
       prompt: 'Nobody is going to tell you the pattern this time. Use every clue you have.',
