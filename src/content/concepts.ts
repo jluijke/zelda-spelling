@@ -847,9 +847,6 @@ const CONCEPT_LIST: Concept[] = [
       mistake('sk-r4', 'spellcheck-limits', 'The dog hurt it\'s paw.', "it's", 'its'),
       mistake('sk-r5', 'spellcheck-limits', 'She new the answer straight away.', 'new', 'knew'),
       mistake('sk-r6', 'spellcheck-limits', 'We one the match on Saturday.', 'one', 'won'),
-      proof('sk-r7', 'spellcheck-limits', 'Your write about there new bike.', [
-        ['Your', "You're"], ['write', 'right'], ['there', 'their'],
-      ], { difficulty: 3 }),
       proof('sk-r8', 'spellcheck-limits', 'Its to late to by any flours.', [
         ['Its', "It's"], ['to', 'too'], ['by', 'buy'], ['flours', 'flowers'],
       ], { difficulty: 3 }),

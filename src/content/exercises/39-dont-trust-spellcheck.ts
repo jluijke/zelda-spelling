@@ -18,12 +18,8 @@ export const exercise39: Exercise = {
       prompt: 'Every word here exists, so a computer would say this sentence is fine. It is not.',
     }),
     mistake('e39-2', 'spellcheck-limits', 'I have two much homework.', 'two', 'too'),
-
-    proof('e39-6', 'spellcheck-limits', 'Your write about there new bike.', [
-      ['Your', "You're"],
-      ['write', 'right'],
-      ['there', 'their'],
-    ], { difficulty: 3 }),
+    mistake('e39-3', 'spellcheck-limits', 'Can you here the bell from your room?', 'here', 'hear'),
+    mistake('e39-4', 'spellcheck-limits', 'We road our bikes to the park.', 'road', 'rode', { difficulty: 2 }),
 
     novel(
       proof('e39-7', 'spellcheck-limits', 'Its to late to by any flours.', [
