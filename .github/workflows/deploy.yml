@@ -4,7 +4,7 @@
 # The first run switches the repository's Pages source to "GitHub Actions"
 # itself (configure-pages with enablement on), so nothing has to be clicked
 # in Settings first. Every push to the branches below then redeploys, and
-# the site is at https://jluijke.github.io/claude-routines-scratch/
+# the site is at https://jluijke.github.io/zelda-spelling/
 name: Deploy
 
 on:

@@ -284,10 +284,15 @@ voice later without touching a single exercise.
 ## Hosting it
 
 Pushing to the branch builds the game and publishes it to GitHub Pages, so he
-can open a URL on any device instead of needing Node running. It needs one
-switch flipped by hand first: in the repository's **Settings → Pages**, set
-**Source** to **GitHub Actions**. After that every push deploys, and the
-workflow refuses to publish if the tests or the content validator fail.
+can open a URL on any device instead of needing Node running. The game lives
+at <https://jluijke.github.io/zelda-spelling/>: no password, and every push
+puts the new version there within a couple of minutes, picked up the next
+time the page is opened or refreshed. The workflow refuses to publish if the
+tests or the content validator fail. The one switch that had to be flipped by
+hand, **Settings → Pages → Source: GitHub Actions**, has been.
+
+Progress is saved in the browser, so the same child on two devices has two
+games unless the save is moved with the parent panel's export and import.
 
 ## A note on the art
 
